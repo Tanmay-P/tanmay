@@ -107,7 +107,7 @@ background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 
 }
 #about center h1 {
     margin: 0;
-    font-size: 3vw;
+    font-size: 5vw;
 }
 #about p {
     font-size: 1.5vw;
@@ -160,7 +160,7 @@ background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 
 }
 #connect center h1 {
     margin: 0;
-    font-size: 3vw;
+    font-size: 5vw;
 }
 form {
   margin: 0 10%;
