@@ -1,0 +1,208 @@
+html, body {
+	height:100%;
+	width:100%;
+	font-family: 'Poppins' , sans-serif;
+}
+.navbar {
+	padding: .8rem;	
+}
+.navbar-nav li {
+	margin-left: 30px;
+}
+.nav-link {
+	font-size: 1.1em !important;
+}
+
+.wrapper {
+    display:grid;	
+    margin-left: 20%;
+    margin-top: -10%;
+}
+.wrapper .button{
+display: inline-block;
+height: 2rem;
+width: 2rem;
+float: left;
+margin: 0 5px;
+overflow: hidden;
+background: #fff;
+border-radius: 50px;
+cursor: pointer;
+box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+transition: all 0.3s ease-out;
+margin-bottom: 10px;
+}
+.wrapper .button:hover{
+width: 10em;
+}
+.wrapper .button .icon{
+color:#000;
+display: inline-block;
+height: 2rem;
+width: 2rem;
+text-align: center;
+border-radius: 50px;
+box-sizing: border-box;
+line-height: 35px;
+transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(2):hover .icon{
+background: #4267B2;
+}
+.wrapper .button:nth-child(3):hover .icon{
+background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+.wrapper .button .icon i{
+font-size: 1.3rem;
+line-height: 35px;
+transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i{
+color: #fff;
+}
+.wrapper .button span{
+font-size: 1rem;
+font-weight: 500;
+line-height: 35px;
+margin-left: 10px;
+transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(2) span{
+color: blue;
+}
+.wrapper .button:nth-child(3) span{
+background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+       /* Also define standard property for compatibility */
+       background-clip: text;
+    -webkit-text-fill-color: transparent;
+}             
+
+#home {
+    display: flex ;
+    background: #000;
+    color: #fff;
+}
+
+#home h1 {
+    padding: 15%;
+    font-size: 5vw;
+    color: #fff;
+}
+#img {
+  text-align: center;
+}
+#img img {
+  width: 55%;
+  margin-top: 10%;
+  -webkit-box-reflect: below 1px linear-gradient(to bottom, transparent, transparent, rgba(0,0,0,.4));
+}
+
+#about {
+    background-color: #000;
+    color: #fff;
+}
+#about center {
+    padding: 7%;
+}
+#about center h1 {
+    margin: 0;
+    font-size: 3vw;
+}
+#about p {
+    font-size: 1.5vw;
+    padding: 10%;
+}
+
+.img {
+  width:100%; height:100%;
+  position:relative;
+  cursor:pointer;
+  overflow:hidden;
+  color: #000;
+  text-align: center;
+}
+.img img {
+  width:55%;
+  object-fit: cover;
+  transition: all 0.3s ease-in;
+}
+.details {
+  color: #fff;
+  position:absolute;
+  top:0; left:0;
+  width:100%; height:100%;
+  backdrop-filter: blur(10px);
+  opacity:0;
+  transition:all 0.3s ease-in;
+}
+.details h1 {
+  position:absolute;
+  top:50%; left:50%;
+  transform:translate(-50%,-50%);
+  text-transform:uppercase;
+  font-family:verdana;
+  white-space:nowrap;
+  font-size:2.5vw;
+  font-weight:100;
+}
+.img:hover .details {
+  opacity:1;
+}
+
+#connect {
+    background: #000;
+    color: #fff;
+    padding-bottom: 5%;
+}
+#connect center {
+    padding: 7%;
+}
+#connect center h1 {
+    margin: 0;
+    font-size: 3vw;
+}
+form {
+  margin: 0 10%;
+  background: transparent;
+}
+#fname,#lname,#email,#message {
+  margin: 2% 0 2% 0;
+  background: transparent;
+  color: #fff;
+  border-bottom-color: #fff;
+  border-left-color: #000;
+  border-right-color: #000;
+  border-top-color: #000;
+}
+#fname:hover,#lname:hover,#email:hover,#message:hover {
+  box-shadow: 0px 0px 10px #fff;
+}
+#send {
+  margin-top: 4%;
+  float: center;
+}
+#send a {
+  padding: 10px  40px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 992px) {
+  #img img {
+    margin-bottom: 23%;
+  }
+  .img img {
+    margin-bottom: 23%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #fname,#lname,#email,#message {
+    margin-bottom: 5%;
+  }
+  
+}
