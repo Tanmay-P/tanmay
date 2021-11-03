@@ -1,7 +1,6 @@
 <html>
     <head>
         <title>About</title>
-        <link rel="stylesheet" href="css/style.css">
 
         <link rel="icon" href="img/TitleLogo.png" type="image/x-icon">
 
@@ -21,12 +20,19 @@
  body {
    margin: 0;
    padding: 0;
-   background-color: #000;
+   background-color: #282828;
    color: #fff;
  }
  nav {
-   background-color: #000;
+   background-color: #282828;
    color: #fff;
+
+   text-shadow:  2px 2px 5px #000;
+
+   box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.5),
+        inset 4px 4px 10px rgba(0, 0, 0, 0.5),
+        inset -4px -4px 10px rgba(67, 67, 67, 0.3),
+        4px 4px 10px rgba(0, 0, 0, 0.3);
  }
  .nav-link {
    color: #fff;
@@ -53,7 +59,7 @@
  li {
    padding: 5px 10px 5px 10px;
  }
- h4 {
+ .title h4 {
    font-size: 25px;
    font-family: lobster;
    letter-spacing: 6px;
@@ -70,25 +76,92 @@
  }
 
 
+
 .title {
-  margin-bottom: 50px;
+  padding: 30px;
 }
- .about {
-   margin: 0;
- }
-.edu, .skills, .extra {
-   padding-left: 10%;
+.title h1 {
+  text-shadow:  2px 2px 5px #000;
 }
+
+.about {
+  margin: 0;
+}
+.edu h3 {
+  text-align: center;
+  text-shadow:  2px 2px 5px #000;
+}
+
+.edu h5 {
+  font-size: 3vh;
+  padding: 20px;
+  font-weight: 400;
+  text-shadow:  2px 2px 5px #000;
+}
+
 p {
   font-weight: 100;
+  font-size: 2vh;
+  padding-top: 5px;
+  text-shadow:  2px 2px 5px #000;
 }
 
+.skills h3 {
+  text-align: center;
+  text-shadow:  2px 2px 5px #000;
+}
+.skills ul li {
+  text-shadow:  2px 2px 5px #000;
+}
 
- @media screen and (max-width: 767px) {
+.lang h3 {
+  text-align: center;
+  text-shadow:  2px 2px 5px #000;
+}
+
+.lang ul {
+  margin-left: 25px;
+}
+.lang ul li {
+  text-shadow:  2px 2px 5px #000;
+}
+
+.edu , .skills , .lang {
+  border-top: 1px solid #fff;
+  padding-top: 30px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 991.5px) {
+  .title {
+     padding: 20px 0 20px 0 ;
+   }
    .nav-link {
      text-align: center;
      width: 100%;
    }
+}
+
+ @media screen and (max-width: 767.5px) {
+   .nav-link {
+     text-align: center;
+     width: 100%;
+     border: none;
+
+     box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.5),
+        inset 4px 4px 10px rgba(0, 0, 0, 0.5),
+        inset -4px -4px 10px rgba(67, 67, 67, 0.3),
+        4px 4px 10px rgba(0, 0, 0, 0.3);
+   }
+
+   .skills ul li {
+      margin-left: 40px;
+   }
+   
+   .lang ul {
+      margin-left: 50px;
+   }
+
    
  }
 </style>
@@ -122,20 +195,57 @@ p {
             </center>
         </div>
 
-        <div class="container-fluid about row">
+        <div class="container-fluid about">
 
-          <div class="container edu col-lg-6">
-            <h3>Education</h3>
-            <p> <strong> SSC :- </strong> Our Lady of Salvation High School, Dadar, Mumbai. </p>
-            <p> <strong> HSC :- </strong> Kirti M. Doongursee College of Arts, Science & Commerce, Dadar, Mumbai. </p>
-            <p> <strong> B.Sc. I.T. :- </strong> Kirti M. Doongursee College of Arts, Science & Commerce, Dadar, Mumbai. </p>
+          <div class="container">
+          <div class="edu">
+            <h3> Education </h3>
+            <h5> Bachelor of Science in Information Technology (B.Sc.I.T.) 
+              <p> Kirti M. Doongursee College of Arts, Science & Commerce. </p>
+            </h5>
           </div>
 
-          <div class="container Skills col-lg-6">
-            <h3>Skills</h3>
-            <p><strong> Frontend :- </strong> HTML , CSS, JS. </p>
-            <p><strong> Backend :- </strong> JAVA, PYTHON. </p>
-            <p><strong> Frameworks :- </strong> BOOTSTRAP(Frontend), DJANGO(Python) </p>
+          <div class="skills">
+            <h3> Skills </h3>
+            <div class="container row">
+              <div class="col-sm-6 col-md-3 col-lg-3">
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JAVASCRIPT</li>
+            </ul>
+              </div>
+              <div class="col-sm-6 col-md-3 col-lg-3">
+            <ul>
+              <li>JAVA</li>
+              <li>PYTHON</li>
+              <li>SQL</li>
+            </ul>
+              </div>
+              <div class="col-sm-6 col-md-3 col-lg-3">
+            <ul>
+              <li>BOOTSTRAP</li>
+              <li>DJANGO</li>
+            </ul>
+              </div>
+              <div class="col-sm-6 col-md-3 col-lg-3">
+            <ul>
+              <li>MYSQL (Database)</li>
+            </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="lang">
+            <h3> Language </h3>
+            <ul class="row">
+              <li class="col-sm-6 col-md-3">MARATHI</li>
+              <li class="col-sm-6 col-md-3">HINDI</li>
+              <li class="col-sm-6 col-md-3">ENGLISH</li>
+            </ul>
+          </div>
+
+            
           </div>
 
         </div>
