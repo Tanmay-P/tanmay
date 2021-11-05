@@ -47,6 +47,11 @@
    border-color: red;
    border-radius: 5px;
    background-color: transparent;
+
+   box-shadow: -4px -4px 8px rgba(67, 67, 67, 0.5),
+        inset 4px 4px 8px rgba(0, 0, 0, 0.5),
+        inset -4px -4px 8px rgba(67, 67, 67, 0.3),
+        4px 4px 8px rgba(0, 0, 0, 0.3);
  }
  span {
     color: red;
@@ -76,11 +81,20 @@
  }
 
 
-
-.title {
-  padding: 30px;
+.name {
+  display: flex; 
+  float: right; 
+  margin-right: 3%; 
+  margin-top: 10px;
 }
+.pic {
+  width: 60px; 
+  height: 60px; 
+  border-radius: 50px;
+}
+
 .title h1 {
+  padding: 30px;
   text-shadow:  2px 2px 5px #000;
 }
 
@@ -133,9 +147,11 @@ p {
 }
 
 @media screen and (max-width: 991.5px) {
-  .title {
-     padding: 20px 0 20px 0 ;
-   }
+  .pic {
+    width: 50px; 
+    height: 50px; 
+  }
+ 
    .nav-link {
      text-align: center;
      width: 100%;
@@ -154,6 +170,14 @@ p {
         4px 4px 10px rgba(0, 0, 0, 0.3);
    }
 
+   .pic {
+    width: 35px; 
+    height: 35px; 
+   }
+   .name p {
+     font-size: 10px;
+   }
+
    .skills ul li {
       margin-left: 40px;
    }
@@ -162,7 +186,6 @@ p {
       margin-left: 50px;
    }
 
-   
  }
 </style>
 
@@ -189,11 +212,16 @@ p {
             </div>	 
           </nav>
 
+          <div class="name"> 
+            <p style="margin-right: 5px; margin-bottom: 0;">Tanmay Pednekar <br> (Web Developer) </p>
+            <img src="img/2.jpeg" class="pic"> 
+          </div> <br><br>
+
           <div class="container title">
             <center>
-                <h1>About</h1>
+                <h1 class="">About</h1>
             </center>
-        </div>
+          </div>
 
         <div class="container-fluid about">
 
