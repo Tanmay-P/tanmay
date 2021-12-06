@@ -16,6 +16,8 @@
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
  body {
    margin: 0;
@@ -26,19 +28,14 @@
  nav {
    background-color: #282828;
    color: #fff;
-
    text-shadow:  2px 2px 5px #000;
-
-   box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.5),
-        inset 4px 4px 10px rgba(0, 0, 0, 0.5),
-        inset -4px -4px 10px rgba(67, 67, 67, 0.3),
-        4px 4px 10px rgba(0, 0, 0, 0.3);
+   text-transform: uppercase;
  }
  .nav-link {
    color: #fff;
    font-weight: 500;
    border: 1px solid transparent;
-   width: 80px; 
+   width: 100px; 
    text-align: center;
  }
  .nav-link:hover {
@@ -46,11 +43,6 @@
    border-color: red;
    border-radius: 5px;
    background-color: transparent;
-
-   box-shadow: -4px -4px 8px rgba(67, 67, 67, 0.5),
-        inset 4px 4px 8px rgba(0, 0, 0, 0.5),
-        inset -4px -4px 8px rgba(67, 67, 67, 0.3),
-        4px 4px 8px rgba(0, 0, 0, 0.3);
  }
  span {
     color: red;
@@ -95,44 +87,55 @@
 
  .contact {
   padding-top: 20px;
-  border-right: 1px solid #fff;
 }
 
-.contact h2 {
-  font-size: 6vh;
-  font-weight: 100;
-  margin-bottom: 20px;
-}
 .contact a {
   color: #fff;
+  text-decoration: none;
 }
-.contact a .fa-facebook-f {
-  padding: 15px 19px;
+
+.contact .fa-facebook {
   color: #3b5998;
+
 }
-.contact a .fa-instagram {
+.contact .fa-facebook:hover , .contact .fa-facebook:focus {
+  color: #fff;
+  background-color: #3b5998;
+  text-shadow: 2px 2px 2px #000;
+  box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.5),
+               4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contact .fa-instagram {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   -webkit-background-clip: text;
      /* Also define standard property for compatibility */
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.contact .fa-instagram:hover , .contact .fa-instagram:focus {
+  -webkit-text-fill-color: #fff;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  text-shadow: 2px 2px 2px #000;
+  box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.5),
+               4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
 
 
 h6 {
   font-weight: 600;
 }
-p {
-  font-style: italic;
-  font-weight: 100;
-}
 
 .contact h2 {
   font-size: 2rem;
 }
-.contact i {
-  font-size: 25px;
+.contact .icon {
+  text-align: center;
   padding: 15px;
+  width: 55px;
+  height: 55px;
+  font-size: 25px;
   margin: 5px;
   border-radius: 30px;
   box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.5),
@@ -140,47 +143,40 @@ p {
         inset -4px -4px 10px rgba(67, 67, 67, 0.3),
         4px 4px 10px rgba(0, 0, 0, 0.3);
 }
-.contact i:hover, .contact i:focus {
-  /*box-shadow: 0px 0px 8px rgb(192, 54, 54);*/
-  transform: scale(1.2);
-}
+
 .contact .profile {
-  width: 240px;
-  text-align: left;
-  border-radius: 0 30px 0 30px;
-
-  box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.5),
-        inset 4px 4px 10px rgba(0, 0, 0, 0.5),
-        inset -4px -4px 10px rgba(67, 67, 67, 0.3),
-        4px 4px 10px rgba(0, 0, 0, 0.3);
-
-        padding: 20px;
+  width: 55%;
 }
 
- form {
-    margin-top: 40px;
- }
- form h2 {
+form {
+    margin-top: 20px;
+}
+form h2 {
   font-size: 4vh;
   margin-bottom: 20px;
+}
 
- }
- label {
-    margin-left: 15%;
- }
- .form-control {
-     width: 70%;
-     margin-left: 15%;
-     background-color: transparent;
-     color: #fff;
-     border: 1px solid #282828;
-     letter-spacing: 1px;
+.form {
+  justify-content: center;
+  text-transform: uppercase;
+}
+label {
+  margin: 10px;
+  text-shadow: 2px 2px 2px #000;
+}
+.form-control {
+  padding: 25px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #282828;
+  border-radius: 35px;
+  letter-spacing: 1px;
 
-     box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.5),
-        inset 4px 4px 10px rgba(0, 0, 0, 0.5),
-        inset -4px -4px 10px rgba(67, 67, 67, 0.3),
-        4px 4px 10px rgba(0, 0, 0, 0.3);
- }
+  box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.5),
+    inset 4px 4px 10px rgba(0, 0, 0, 0.5),
+    inset -4px -4px 10px rgba(67, 67, 67, 0.3),
+    4px 4px 10px rgba(0, 0, 0, 0.3);
+}
  .form-control:focus {
    border: .5px solid red;
    background-color: transparent;
@@ -193,25 +189,77 @@ p {
         4px 4px 10px rgba(0, 0, 0, 0.3);
   }
 
- .button {
-   background-color: red;
-   color: #fff;
+.button::before {
+  background-color: red;
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: all .3s ease-out;
+}
+.button {
+  border: none;
+  overflow: hidden;
+    display: inline-block;
 
-   text-shadow:  2px 2px 5px #000;
-   
-   border-radius: 5px;
-   padding: 5px 20px;
-   outline: none;
-   border: none;
-   transition: all .5 ease-in-out;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  
+    text-transform: uppercase;
+    text-decoration: none!important;
+    position: relative;
+    z-index: 1;
+    padding: 16px 70px 16px 35px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    background-color: transparent;
+    outline: none!important;
+    cursor: pointer!important;
+    border: 1px solid red;
+    border-radius: 35px;
 
-   box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.5),
-        4px 4px 10px rgba(0, 0, 0, 0.3);
- }
- .button:hover , .button:focus {
-   transform: scale(1.1);
-   outline: none;
- }
+    box-shadow: inset 0 0 0 0 red;
+  -webkit-transition: ease-out 0.6s;
+  -moz-transition: ease-out 0.6s;
+  transition: ease-out 0.6s;
+
+}
+
+.button-text {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-shadow:  2px 2px 5px #000;
+}
+  
+.button-icon {
+  background-color: red;
+  position: absolute;
+    right: -1px;
+    top: -1px;
+    bottom: 0;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    color: #fff;
+    border-radius: 50%;
+    text-shadow:  2px 2px 5px #000;
+}
+.button:hover, .button:focus {
+  box-shadow: inset -400px 0 0 0 red;
+}
 
 
  @media screen and (max-width: 991.5px) {
@@ -231,16 +279,6 @@ p {
         margin-top: 50px;
         margin-bottom: 20px;
     }
-    label {
-        margin: 0;
-        margin-bottom: 10px;
-        margin-left: 15%;
-    }
-    .form-control {
-        margin: 0;
-        margin-left: 15%;
-    }
-
  }
 
  @media screen and (max-width: 767.5px) {
@@ -254,15 +292,52 @@ p {
         inset -4px -4px 10px rgba(67, 67, 67, 0.3),
         4px 4px 10px rgba(0, 0, 0, 0.3);
    }
-    label {
-      margin: 0;
-      margin-bottom: 10px;
-    }
     .form-control {
-        margin: 0;
         width: 100%;
     }
  }
+
+@media screen and (max-width: 425px) {
+  .contact .profile {
+    width: 72%;
+  }
+   
+}
+
+@media screen and (max-width: 375px) {
+  .contact .profile {
+    width: 95%;
+  }
+   
+}
+
+
+.profile h6, .profile p {
+  margin-left: 20px;
+  text-shadow:  2px 2px 5px #000;
+}
+.profile p {
+  font-weight: 300;
+}
+
+.text {
+  text-transform: capitalize;
+  font-style: normal;
+  font-weight: 500;
+  text-shadow:  2px 2px 5px #000;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.social {
+  display: flex;
+  place-content: center;
+  padding: 10px ;
+}
+.social h2 {
+  padding: 10px;
+  font-weight: 400;
+}
 </style>
 
     </head>
@@ -290,60 +365,88 @@ p {
 
           <div class="container title">
             <center>
-                <h1>Contact</h1>
+                <h1>GET IN TOUCH</h1>
             </center>
           </div>
 
           <div class="container-fluid row">
 
-            <div class="container-fluid col-lg-6 contact">
-              <center>
-                <h2>Profile</h2>
+            <div class="container-fluid col-lg-5 contact">
+              
+                <p class="text">
+                  Feel free to get in touch with me. 
+                  I am always open to discussing new projects, 
+                  creative ideas or opportunities to be part of your visions.
+                </p>
 
                   <div class="container profile">
-                  <h6>Name :</h6>
-                  <p>Tanmay A. Pednekar</p>
 
-                  <h6>Email :</h6>
-                  <p>tanmaypednekar21@gmail.com</p>
+                    <div style="border: 1px solid red; border-radius: 100px; background-color: red; width: 35px; height: 35px; padding: 8px 11px;">
+                    <i class="fa fa-map-marker"></i>
+                    </div>
+                    <div style="border-left: 2px solid red; margin-left: 17px;">
+                    <h6>Address :</h6>
+                    <p>Mumbai, Maharashtra, India.</p>
+                    </div>
 
-                  <h6>Address :</h6>
-                  <p>Mumbai, Maharashtra, India.</p>
+                    <div style="border: 1px solid red; border-radius: 100px; background-color: red; width: 35px; height: 35px; padding: 8px 8px;">
+                    <i class="fa fa-envelope-open"></i>
+                    </div>
+                    <div style="border-left: 2px solid red; margin-left: 17px;">
+                    <h6>Mail me :</h6>
+                    <p>tanmaypednekar21@gmail.com</p>
+                    </div>
+
+                    <div style="border: 1px solid red; border-radius: 100px; background-color: red; width: 35px; height: 35px; padding: 8px 10px;">
+                    <i class="fa fa-phone"></i>
+                    </div>
+                    <div style="border-left: 2px solid red; margin-left: 17px;">
+                    <h6>Contact me :</h6>
+                    <p>+91 8693899740</p>
+                    </div>
+
                   </div>
-                  <br>
-                
-                  <h2>Social</h2>
 
-                  <a  href="https://www.facebook.com/people/Tanmay-Pednekar/100005380007731/"><i class="fab fa-facebook-f"></i></a>
-                  <a href="https://www.instagram.com/tanmay_83_/"><i class="fab fa-instagram"></i></a>
-              </center>
+                  <div class="container social">
+                    <h2>Social :-</h2>
+                    <a href="https://www.facebook.com/people/Tanmay-Pednekar/100005380007731/" class="icon fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/tanmay_83_/" class="icon fa fa-instagram"></a>
+
+                    <!--<a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-linkedin-in"></i></a> -->
+                  </div>
+
+                
            </div>
 
-            <form class="container-fluid col-lg-6">
-              
-                <center>
-                  <h2>
-                    Send a Message
-                  </h2> 
-                </center>
-                <div class="container form-group">
+            <form class="container-fluid col-lg-7">
+              <div class="form row">
+                <div class="container form-group col-md-6">
                     <label for="uname">UserName :</label>
                     <input type="text" class="form-control" id="uname" placeholder="Enter your name" name="uname" maxlength="30" required>
                   </div>
 
-                <div class="container form-group">
+                <div class="container form-group col-md-6">
                   <label for="email">Email Address :</label>
-                  <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" maxlength="30" required>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" maxlength="30" autocomplete="off" required>
                 </div>
 
-                <div class="container form-group">
+                <div class="container form-group col-md-12">
+                  <label for="email">Subject :</label>
+                  <input type="text" class="form-control" id="sub" name="sub" placeholder="Enter your subject" maxlength="30" required>
+                </div>
+
+                <div class="container form-group col-md-12">
                   <label for="msg">Message :</label>
                   <textarea class="form-control" id="msg" name="msg" rows="3" placeholder="Write your message" maxlength="200"></textarea>
                 </div>
                 <center>
-                  <button type="submit" class="button">Send</button>
+                  <button type="submit" class="button">
+                    <span class="button-text">Send Message</span> 
+                    <i class="button-icon fa fa-send-o"></i>
+                  </button>
                 </center>
-                
+              </div>
             </form>
               
             

@@ -2,6 +2,8 @@
     <head>
         <title>About</title>
 
+        <link rel="stylesheet" href="css/about.css">
+
         <link rel="icon" href="img/TitleLogo.png" type="image/x-icon">
 
         <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -15,185 +17,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 <style>
- body {
-   margin: 0;
-   padding: 0;
-   background-color: #282828;
-   color: #fff;
- }
- nav {
-   background-color: #282828;
-   color: #fff;
-
-   text-shadow:  2px 2px 5px #000;
-
-   box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.5),
-        inset 4px 4px 10px rgba(0, 0, 0, 0.5),
-        inset -4px -4px 10px rgba(67, 67, 67, 0.3),
-        4px 4px 10px rgba(0, 0, 0, 0.3);
- }
- .nav-link {
-   color: #fff;
-   font-weight: 500;
-   border: 1px solid transparent;
-
-   width: 80px; 
-   text-align: center;
- }
- .nav-link:hover {
-   color: red;
-   border-color: red;
-   border-radius: 5px;
-   background-color: transparent;
-
-   box-shadow: -4px -4px 8px rgba(67, 67, 67, 0.5),
-        inset 4px 4px 8px rgba(0, 0, 0, 0.5),
-        inset -4px -4px 8px rgba(67, 67, 67, 0.3),
-        4px 4px 8px rgba(0, 0, 0, 0.3);
- }
- span {
-    color: red;
- }
- .active {
-   color: #fff;
-   border-radius: 5px;
-   background-color: red;
- }
- li {
-   padding: 5px 10px 5px 10px;
- }
- nav h4 {
-   font-size: 25px;
-   font-family: lobster;
-   letter-spacing: 6px;
-
-   -moz-user-select: none; 
-   -webkit-user-select: none; 
-   -ms-user-select:none; 
-   user-select:none;
-   -o-user-select:none;
- }
- .navbar button {
-   outline: none;
-   border: none;
- }
-
-
-.name {
-  display: flex; 
-  float: right; 
-  margin-right: 3%; 
-  margin-top: 10px;
-}
-.pic {
-  width: 60px; 
-  height: 60px; 
-  border-radius: 50px;
-}
-
-.title h1 {
-  padding: 30px;
-  text-shadow:  2px 2px 5px #000;
-}
-
-.about {
-  margin: 0;
-}
-.edu h3 {
-  text-align: center;
-  text-shadow:  2px 2px 5px #000;
-}
-
-.edu h5 {
-  font-size: 3vh;
-  padding: 20px;
-  font-weight: 400;
-  text-shadow:  2px 2px 5px #000;
-}
-
-p {
-  font-weight: 100;
-  font-size: 2vh;
-  padding-top: 5px;
-  text-shadow:  2px 2px 5px #000;
-}
-
-.skills h3 {
-  text-align: center;
-  text-shadow:  2px 2px 5px #000;
-}
-.skills ul li {
-  text-shadow:  2px 2px 5px #000;
-}
-
-.lang h3 {
-  text-align: center;
-  text-shadow:  2px 2px 5px #000;
-}
-
-.lang ul {
-  margin-left: 25px;
-}
-.lang ul li {
-  text-shadow:  2px 2px 5px #000;
-}
-
-.edu , .skills , .lang {
-  border-top: 1px solid #fff;
-  padding-top: 30px;
-  margin-bottom: 20px;
-}
-
-@media screen and (max-width: 991.5px) {
-  .pic {
-    width: 50px; 
-    height: 50px; 
+  body {
+    background-color: #282828;
+    color: #fff;
   }
- 
-   .nav-link {
-     text-align: center;
-     width: 100%;
-   }
-}
-
- @media screen and (max-width: 767.5px) {
-   .nav-link {
-     text-align: center;
-     width: 100%;
-     border: none;
-
-     box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.5),
-        inset 4px 4px 10px rgba(0, 0, 0, 0.5),
-        inset -4px -4px 10px rgba(67, 67, 67, 0.3),
-        4px 4px 10px rgba(0, 0, 0, 0.3);
-   }
-
-   .pic {
-    width: 35px; 
-    height: 35px; 
-   }
-   .name p {
-     font-size: 10px;
-   }
-
-   .skills ul li {
-      margin-left: 40px;
-   }
-   
-   .lang ul {
-      margin-left: 50px;
-   }
-
- }
 </style>
-
     </head>
-    <body>
+    <body style="background-color: #282828;">
         <nav class="navbar navbar-expand-md  sticky-top">
             <div class="container-fluid">
-               <h4 href="index.html">POR<span>T</span>FOLIO</h4>
+               <h4 href="index.html">POR<span class="t">T</span>FOLIO</h4>
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive">
               <span class="navbar-toggler-icon" role="button" ><i class="fa fa-bars" aria-hidden="true" style="color:#e6e6ff; font-size: 30px; top: 10px;"></i></span>
             </button>  
@@ -212,32 +47,130 @@ p {
             </div>	 
           </nav>
 
-          <div class="name"> 
-            <p style="margin-right: 5px; margin-bottom: 0;">Tanmay Pednekar <br> (Web Developer) </p>
-            <img src="img/2.jpeg" class="pic"> 
-          </div> <br><br>
-
           <div class="container title">
             <center>
-                <h1 class="">About</h1>
+                <h1 class="">ABOUT ME</h1>
             </center>
           </div>
 
-        <div class="container-fluid about">
+      <div class="container-fluid about">
 
-          <div class="container">
+        <div class="container">
           <div class="edu">
-            <h3> Education </h3>
-            <h5> Bachelor of Science in Information Technology (B.Sc.I.T.) 
+            <h3>EDUCATION</h3>
+            <div style="border: 1px solid red; border-radius: 100px; background-color: red; width: 40px; height: 40px; padding: 10px;">
+              <i class='fas fa-graduation-cap'></i>
+            </div>
+            <div style="border-left: 2px solid red; margin-left: 20px;">
+              <h5>Bachelor of Science in Information Technology (B.Sc.I.T.) 
               <p> Kirti M. Doongursee College of Arts, Science & Commerce. </p>
             </h5>
+            </div>
           </div>
 
           <div class="skills">
-            <h3> Skills </h3>
-            <div class="container row">
-              <div class="col-sm-6 col-md-3 col-lg-3">
-            <ul>
+            <h3>MY SKILLS</h3>
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-6">
+                <div class="circle"><p>HTML</p></div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-6">
+                <div class="circle"><p>CSS</p></div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-6">
+                <div class="circle"><p>JAVASCRIPT</p></div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-6">
+                <div class="circle"><p>BOOTSTRAP</p></div>
+              </div>
+
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-6">
+                <div class="circle"><p>ANGULAR JS</p></div>
+              </div>
+
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-6">
+                <div class="circle"><p>JAVA</p></div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-6">
+                <div class="circle"><p>PYTHON</p></div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-6">
+                <div class="circle"><p>SQL</p></div>
+              </div>              
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="container-fluid row info">
+          <div class="container personal col-md-6">
+            <h3>PERSONAL INFO</h3>
+            <ul class="about-list row">
+              <li class="col-6">
+                <span class="title-info">first name : </span>
+                <span class="value">Tanmay</span>
+              </li>
+              <li class="col-6">
+                <span class="title-info">last name : </span>
+                <span class="value">Pednekar</span>
+              </li>
+              <li class="col-6">
+                <span class="title-info">age : </span>
+                <span class="value">20 Years</span>
+              </li>
+              <li class="col-6">
+                <span class="title-info">freelance : </span>
+                <span class="value">Available</span>
+              </li>
+              <li class="col-6">
+                <span class="title-info">address : </span>
+                <span class="value">Mumbai</span>
+              </li>
+              <li class="col-6">
+                <span class="title-info">phone : </span>
+                <span class="value">+918693899740</span>
+              </li>
+              <li class="col-6">
+                <span class="title-info">email : </span>
+                <span class="value">tanmaypednekar21@gmail.com</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="container project col-md-6">
+            <h3>FINAL YEAR PROJECT</h3>
+            <ul class="about-list row">
+              <li class="col-6">
+                <span class="title-info">title : </span>
+                <span class="value">Bank Management System</span>
+              </li>
+              <li class="col-6">
+                <span class="title-info">type : </span>
+                <span class="value">Web Application</span>
+              </li>
+              <li class="col-6">
+                <span class="title-info">front end : </span>
+                <span class="value">HTML, CSS, JS, BOOTSTRAP</span>
+              </li>
+              <li class="col-6">
+                <span class="title-info">back end : </span>
+                <span class="value">JAVA/JSP, SQL</span>
+              </li>
+              <li class="col-6">
+                <span class="title-info">database : </span>
+                <span class="value">MYSQL</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </body>
+</html>
+
+
+<!--<div class="col-sm-6 col-md-3 col-lg-3">
+            <ul> 
               <li>HTML</li>
               <li>CSS</li>
               <li>JAVASCRIPT</li>
@@ -261,22 +194,4 @@ p {
               <li>MYSQL (Database)</li>
             </ul>
               </div>
-            </div>
-          </div>
-
-          <div class="lang">
-            <h3> Language </h3>
-            <ul class="row">
-              <li class="col-sm-6 col-md-3">MARATHI</li>
-              <li class="col-sm-6 col-md-3">HINDI</li>
-              <li class="col-sm-6 col-md-3">ENGLISH</li>
-            </ul>
-          </div>
-
-            
-          </div>
-
-        </div>
-
-    </body>
-</html>
+            </div>-->
